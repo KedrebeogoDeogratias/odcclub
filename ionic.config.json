@@ -1,0 +1,7 @@
+{
+  "name": "odcclub",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
