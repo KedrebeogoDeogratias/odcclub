@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
+  data="Mes données";
+
+  changerVariable(){
+    this.data="Nouvelle valeur";
+  }
   constructor() {}
 
 }

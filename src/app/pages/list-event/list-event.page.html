@@ -1,19 +1,18 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>List of Event</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
+      <ion-title size="large">listEvent</ion-title>
     </ion-toolbar>
   </ion-header>
-
-
   <ion-content color="light">
     <ion-list [inset]="true">
       <ion-item *ngFor="let unEvent of listEvent">
@@ -21,10 +20,6 @@
       </ion-item>
     </ion-list>
   </ion-content>
+</ion-content>
 
-  <div id="container">
-    <p id="compteur">{{ compteur }}</p>
-    <ion-button (click)="augmenter()" >Ajouter</ion-button> 
-    <ion-button (click)="dimunuer()" color="secondary">Diminuer</ion-button>
-  
-  </div></ion-content>
+

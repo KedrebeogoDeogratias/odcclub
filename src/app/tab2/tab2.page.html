@@ -12,6 +12,9 @@
       <ion-title size="large">Tab 2</ion-title>
     </ion-toolbar>
   </ion-header>
+<div id="container">
+  <p>{{ data }}</p>
+  <ion-button (click)="changerVariable()">Valider</ion-button> <ion-button [disabled]="true">Annuler</ion-button>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+</div>
 </ion-content>

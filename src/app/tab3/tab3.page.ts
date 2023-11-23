@@ -7,6 +7,40 @@ import { Component } from '@angular/core';
 })
 export class Tab3Page {
 
-  constructor() {}
+  listEvent = [{
+    'id': 1,
+    'libelle': "formation Arduino",
+    "date": "f"
+
+  },
+  {
+    'id': 2,
+    'libelle': "formation Ionic",
+    "date": "f"
+
+  }, {
+    'id': 3,
+    'libelle': "formation React",
+    "date": "f"
+
+  }];
+
+  unEvent = {
+    'id': 3,
+    'libelle': "formation ",
+    "date": "f"
+  };
+
+  compteur = 0;
+
+  augmenter() {
+    this.compteur += 1;
+  }
+
+  dimunuer() {
+    this.compteur -= 1;
+  }
+
+  constructor() { }
 
 }

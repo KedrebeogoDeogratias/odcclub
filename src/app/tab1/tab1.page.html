@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
+    <ion-title color="primary">
+      Accueil
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,50 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Accueil</ion-title>
     </ion-toolbar>
   </ion-header>
+  <h1>{{ titre }}</h1>
+  <p>{{ paragraphe }}</p>
+  <ion-grid>
+    <ion-row>
+      <ion-card color="secondary">
+        <ion-card-header>
+          <ion-card-title>Card Title</ion-card-title>
+          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        </ion-card-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+        <ion-card-content> Card Content </ion-card-content>
+      </ion-card>
+      <ion-card color="secondary">
+        <ion-card-header>
+          <ion-card-title>Card Title</ion-card-title>
+          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content> Card Content </ion-card-content>
+      </ion-card>
+      <ion-card color="secondary">
+        <ion-card-header>
+          <ion-card-title>Card Title</ion-card-title>
+          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content> Card Content </ion-card-content>
+      </ion-card>
+      <ion-card color="secondary">
+        <ion-card-header>
+          <ion-card-title>Card Title</ion-card-title>
+          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content> Card Content </ion-card-content>
+      </ion-card>
+    </ion-row>
+  </ion-grid>
+
+
+  <ion-button>Valider</ion-button> <ion-button [disabled]="true">Annuler</ion-button>
+  <ion-button routerLink="list-event">Ouvrir list</ion-button>
+  <ion-button >open event</ion-button>
 </ion-content>

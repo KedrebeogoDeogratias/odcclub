@@ -1,0 +1,19 @@
+
+
+.login-form {
+  font-family: 'Calibri', Courier, monospace;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%; // Adjust as needed
+   // Adjust as needed
+  box-shadow: 0 4px 8px rgba(74, 214, 239, 0.2); // This creates the 'floating' effect
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+}
+
+.login-form ion-item{
+  margin-bottom:20px;
+}
